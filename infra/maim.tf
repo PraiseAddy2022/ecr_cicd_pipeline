@@ -96,7 +96,7 @@ resource "aws_ecs_task_definition" "app" {
   container_definitions = jsonencode([
     {
       name      = "nginx"
-      image     = "nginx:latest"
+      image     = "196135431738.dkr.ecr.us-east-1.amazonaws.com/my-repo:latest"
       essential = true
       portMappings = [
         {
@@ -114,7 +114,12 @@ resource "aws_ecs_task_definition" "app" {
       }
     }
   ])
+
+  lifecycle {
+    ignore_changes = [container_definitions]
+  }
 }
+
 resource "aws_ecs_service" "main" {
   name            = "nginx-service"
   cluster         = aws_ecs_cluster.main.id
