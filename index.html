@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praise Addy - Senior DevOps & Cloud Engineer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            color: #22252a;
+            background-color: #f4f6f8;
+            line-height: 1.4;
+            font-size: 13.5px;
+        }
+
+        .resume-container {
+            width: 8.5in;
+            height: 11in;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 0.45in 0.5in;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+            margin-bottom: 12px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            color: #0056b3;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+
+        .title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #4a5568;
+            margin-top: 2px;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 12px;
+            color: #4a5568;
+            line-height: 1.5;
+        }
+
+        .contact-info a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #0056b3;
+            text-transform: uppercase;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .summary {
+            color: #334155;
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px 16px;
+        }
+
+        .skill-category {
+            font-size: 12.5px;
+        }
+
+        .skill-category strong {
+            color: #1e293b;
+        }
+
+        .job {
+            margin-bottom: 10px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 13.5px;
+            color: #1e293b;
+        }
+
+        .company {
+            color: #0056b3;
+        }
+
+        .job-sub {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 4px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 14px;
+            margin-bottom: 3px;
+            color: #334155;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0056b3;
+            font-weight: bold;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .cert-list li, .edu-list li {
+            margin-bottom: 2px;
+        }
+
+        @media print {
+            body {
+                background: none;
+            }
+            .resume-container {
+                margin: 0;
+                box-shadow: none;
+                width: 100%;
+                height: 100vh;
+                padding: 0.4in 0.4in;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <div>
+        <header>
+            <div class="header-content">
+                <div>
+                    <h1>Praise Addy</h1>
+                    <div class="title">Senior DevOps & Cloud Infrastructure Engineer</div>
+                </div>
+                <div class="contact-info">
+                    <span>Maryland, USA | (555) 019-2834</span><br>
+                    <span>praise.addy@email.com | <a href="#">linkedin.com/in/praiseaddy</a></span><br>
+                    <span><a href="#">github.com/praiseaddy-cloud</a></span>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="section-title">Professional Summary</div>
+            <p class="summary">
+                DevOps & Cloud Engineer with 6 years of experience architecting, automating, and scaling multi-tenant AWS/GCP cloud infrastructures. Skilled in reducing cloud expenditure, optimizing high-availability systems, and accelerating delivery velocity through CI/CD pipelines and Infrastructure as Code (Terraform). Proven leadership in Kubernetes orchestration, microservices deployment, and robust observability integrations.
+            </p>
+        </section>
+
+        <section>
+            <div class="section-title">Technical Expertise</div>
+            <div class="skills-grid">
+                <div class="skill-category"><strong>Cloud Platforms:</strong> AWS (EC2, EKS, S3, RDS, Lambda, CloudFront), GCP</div>
+                <div class="skill-category"><strong>Containerization & Orchestration:</strong> Docker, Kubernetes, Helm, ArgoCD</div>
+                <div class="skill-category"><strong>Infrastructure as Code:</strong> Terraform, Terragrunt, AWS CloudFormation</div>
+                <div class="skill-category"><strong>CI/CD & Automation:</strong> GitHub Actions, GitLab CI, Jenkins, Python, Bash</div>
+                <div class="skill-category"><strong>Monitoring & Observability:</strong> Prometheus, Grafana, Datadog, AWS CloudWatch</div>
+                <div class="skill-category"><strong>Security & Networking:</strong> HashiCorp Vault, IAM, VPC, OpenVPN, Cloudflare</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span>Senior DevOps Engineer</span>
+                    <span class="company">Apex Cloud Solutions</span>
+                </div>
+                <div class="job-sub">
+                    <span>Maryland, USA</span>
+                    <span>2022 – Present (2.5 Yrs)</span>
+                </div>
+                <ul>
+                    <li>Architected and deployed production-grade Amazon EKS clusters using Terraform, supporting 40+ microservices and reducing cluster provisioning time by 60%.</li>
+                    <li>Designed automated GitOps continuous deployment workflows using ArgoCD and GitHub Actions, enabling zero-downtime deployments for 15+ engineering teams.</li>
+                    <li>Reduced AWS monthly cloud infrastructure expenditure by $18,000 (32%) through Graviton node migration, spot instance integration, and S3 lifecycle rule optimization.</li>
+                    <li>Established centralized logging and metrics visualization with Prometheus and Grafana, lowering MTTR by 45% across critical production incidents.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span>Cloud / DevOps Engineer</span>
+                    <span class="company">Chesapeake Tech Partners</span>
+                </div>
+                <div class="job-sub">
+                    <span>Maryland, USA</span>
+                    <span>2020 – 2022 (2 Yrs)</span>
+                </div>
+                <ul>
+                    <li>Migrated legacy monolithic applications running on on-premise VMs to containerized Docker workloads hosted on AWS ECS, improving application uptime to 99.99%.</li>
+                    <li>Authored modular, reusable Terraform modules managing VPCs, IAM policies, RDS PostgreSQL databases, and Redis clusters across Staging and Production environments.</li>
+                    <li>Implemented HashiCorp Vault to centralize secret management, enforcing automated rotation and secret injection across all deployment pipelines.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span>Junior Systems & Automation Engineer</span>
+                    <span class="company">DataStream Systems</span>
+                </div>
+                <div class="job-sub">
+                    <span>Maryland, USA</span>
+                    <span>2018 – 2020 (2 Yrs)</span>
+                </div>
+                <ul>
+                    <li>Automated routine server patching, configuration management, and log rotation for 100+ Linux servers using Ansible and Python scripts.</li>
+                    <li>Maintained and enhanced legacy Jenkins CI pipelines, transitioning build triggers to automated webhooks to streamline developer integrations.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="two-column">
+            <section>
+                <div class="section-title">Certifications</div>
+                <ul class="cert-list">
+                    <li><strong>AWS Certified Solutions Architect – Professional</strong> (2024)</li>
+                    <li><strong>Certified Kubernetes Administrator (CKA)</strong> – Linux Foundation (2023)</li>
+                    <li><strong>HashiCorp Certified: Terraform Associate</strong> (2022)</li>
+                </ul>
+            </section>
+
+            <section>
+                <div class="section-title">Education</div>
+                <ul class="edu-list">
+                    <li><strong>B.S. in Computer Science</strong></li>
+                    <li>University of Maryland (2014 – 2018)</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
